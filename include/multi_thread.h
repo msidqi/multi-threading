@@ -5,16 +5,16 @@
 # include <stdlib.h>
 # define N_THREADS 4 
 
-typedef struct		s_vec2
+typedef struct		s_vec2_int
 {
-	double		x;
-	double		y;
-}			t_vec2;
+	int		x;
+	int		y;
+}			t_vec2_int;
 
 typedef struct		s_startend
 {
-	t_vec2		start;
-	t_vec2		end;
+	t_vec2_int	start;
+	t_vec2_int	end;
 }			t_startend;
 
 
