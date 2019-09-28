@@ -47,7 +47,7 @@ void		ft_multi_thread(t_data *data, void *(*f)(void *))
 	int		step;
 
 	multi = (t_data *)malloc(sizeof(t_data) * N_THREADS);
-	step = data->winwidth / N_THREADS;
+	step = data->winheight / N_THREADS;
 	i = -1;
 	while (++i < N_THREADS)
 		multi[i] = *data;
